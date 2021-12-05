@@ -16,15 +16,15 @@ export default new Router({
       component: () => import('../components/index.vue'),
       redirect: '/main',
       children: [
-            { path: '/main',
+            { path: '/main',//主页面
              name: 'main',
              component: () => import('../components/main.vue')
              },
-            { path: '/book',
+            { path: '/book',//书籍管理
              name: 'book_manage',
              component: () => import('../components/page/bookManage.vue')
              },
-            { path: '/type',
+            { path: '/type',//书籍分类
               name: 'book_type',
               component: () => import('../components/page/bookType.vue')
             },
@@ -32,7 +32,7 @@ export default new Router({
               name: 'search_book',
               component: () => import('../components/page/searchBook.vue')
             },
-            { path: '/reader',
+            { path: '/reader',//读者管理
               name: 'reader_manage',
               component: () => import('../components/page/readerManage.vue')
             },
@@ -48,11 +48,11 @@ export default new Router({
               name: 'borrow_history',
               component: () => import('../components/page/borrowHistory.vue')
             },
-            { path: '/user',
+            { path: '/user',//用户列表
               name: 'user_info',
               component: () => import('../components/page/userInfo.vue')
             },
-            { path: '/pass',
+            { path: '/pass',//修改密码
               name: 'change_password',
               component: () => import('../components/page/changePassword.vue')
             }
